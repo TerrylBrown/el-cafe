@@ -1,0 +1,65 @@
+#site-header {
+	background: $black;
+	color: $white;
+
+	.res-number {
+		float: right;
+		@media screen and (max-width: rem-calc(898px)) {
+			float: none;
+			text-align: center;
+		}
+	}
+	
+	#site-logo {
+		float: left;
+		margin: rem-calc(32px 0);
+		color: $white;
+		@media screen and (max-width: rem-calc(898px)) {
+			margin: rem-calc(10px 0 15px 0);
+		}
+	}
+
+	.toggle-nav {
+		float: right;
+		background: lighten($black, 10%);
+		color: $red;
+		display: block;
+		padding: rem-calc(20px);
+		margin-top: rem-calc(10px);
+		@media screen and (min-width: rem-calc(898px)){
+			display: none;
+		}
+	}
+
+	#site-nav {
+		float: right;
+		clear: right;
+		li {
+			float: left;
+			background: lighten($black, 5%);
+			a {
+				padding: rem-calc(16px 22px);
+				display: block;
+				color: $white;
+				&:hover, &.active{
+					background: $red;
+				}
+			}
+		}
+		@media screen and (max-width: rem-calc(898px)) {
+			float: none;
+			display: none;
+			clear: both;
+			margin-bottom: rem-calc(15px);
+			li {
+				float: none;
+				clear: both;
+				a {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}

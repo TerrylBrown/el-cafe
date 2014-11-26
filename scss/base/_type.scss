@@ -1,0 +1,84 @@
+/*type.scss*/
+body {
+	font-size: 100%;
+	font-family: $lato !important;
+}
+
+
+/***************************************
+Headers
+***************************************/
+h1, h2, h3, h4, h5, h6 {
+	font-family: $medula; 
+	font-weight: 400;
+	margin: rem-calc(20px 0);
+	line-height: 1;
+	@media screen and (max-width: 767px) {
+		margin: rem-calc(10px 0);
+	}
+}
+
+h1 {
+	font-size: rem-calc(72px);
+	@media screen and (max-width: rem-calc(767px)) {
+		font-size: rem-calc(48px);
+	}
+}
+
+h2 {
+	font-size: rem-calc(48px);
+	@media screen and (max-width: rem-calc(767px)) {
+		font-size: rem-calc(36px);
+	}
+}
+
+h3 {
+	font-size: rem-calc(36px);
+	@media screen and (max-width: rem-calc(767px)) {
+		font-size: rem-calc(24px);
+	}
+}
+
+h4 {font-size: rem-calc(24px);}
+h5 {font-size: rem-calc(18px);}
+h6 {font-size: rem-calc(16px);}
+
+/***************************************
+Copy
+***************************************/
+p, li {
+	font-size: rem-calc(18px);
+	font-family: $lato;
+	line-height: 1.5;
+	color: $grey;
+	@media screen and (max-width: rem-calc(767px)) {
+		font-size: rem-calc(16px);
+	}     
+}
+
+p.lead {
+	font-size: rem-calc(24px);
+	line-height: 1.5;
+	color: $white;
+	@media screen and (max-width: rem-calc(767px)) {
+		font-size: rem-calc(18px);
+	}
+}
+
+a {
+	text-decoration: none;
+	font-size: rem-calc(18px);
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.panel-pad {
+	padding-top: 80px;
+}

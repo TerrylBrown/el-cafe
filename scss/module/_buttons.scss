@@ -1,0 +1,22 @@
+.button__custom {
+	padding: rem-calc(10px 0);
+	margin: rem-calc(15px 0);
+	width: rem-calc(200px);
+	text-align: center;
+	display: block;
+	background: $red;
+	color: #fff;
+	transition: all .3s;
+	&:hover {
+		background: darken($red, 10%);
+	}
+}
+
+.link-custom {
+	color: $red;
+	border-bottom: rem-calc(2px) dotted $red;
+	padding-bottom: rem-calc(5px);
+	&:hover {
+		color: darken($red, 10%);
+	}
+}

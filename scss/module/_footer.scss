@@ -1,0 +1,17 @@
+/*footer.scss*/
+#site-footer {
+	padding: rem-calc(60px 0);
+	background: $black;
+	h2 {
+		color: $white;
+	}
+	
+}
+
+#copy {
+		background: lighten($black, 5%);
+		padding: rem-calc(10px 0);
+		p {
+			font-size: rem-calc(14px);
+		}
+	}
